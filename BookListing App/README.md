@@ -7,7 +7,7 @@ A modern, responsive Book Search Application built on the Salesforce Platform us
 | **App Launcher ** | **Book Listing Search Interface** |
 |:---:|:---:|
 | ![APP Launcher](screenshots/booklisting_homepage.gif) | ![Homepage Seach Interface](screenshots/booklisting_app.gif) |
-| *Real-time book search with dynamic card rendering and metadata display.* | *Accessible directly from the Salesforce App Launcher.* |
+| *Accessible directly from the Salesforce App Launcher.* | *Real-time book search with dynamic card rendering and metadata display.* |
 
 ## ✨ Features
 
