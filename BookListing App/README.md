@@ -4,9 +4,9 @@ A modern, responsive Book Search Application built on the Salesforce Platform us
 
 ## 📸 Screenshots
 
-| **Search Interface** | **App Launcher Integration** |
+| **App Launcher ** | **Book Listing Search Interface** |
 |:---:|:---:|
-| ![Book Listing App UI](https://github.com/gayanandpatel/Salesforce-Project-LWC-Apex-/raw/main/BookListing%20App/booklisting_app.gif) | ![App Launcher](https://github.com/gayanandpatel/Salesforce-Project-LWC-Apex-/raw/main/BookListing%20App/booklisting_homepage.gif) |
+| ![APP Launcher](screenshots/booklisting_homepage.gif) | ![Homepage Seach Interface](screenshots/booklisting_app.gif) |
 | *Real-time book search with dynamic card rendering and metadata display.* | *Accessible directly from the Salesforce App Launcher.* |
 
 ## ✨ Features
