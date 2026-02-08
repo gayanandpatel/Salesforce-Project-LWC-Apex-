@@ -1,18 +1,85 @@
-# Salesforce DX Project: Next Steps
+# 📝 Salesforce Quiz App (LWC)
 
-Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
+A dynamic and interactive Quiz Application built on the Salesforce Platform using **Lightning Web Components (LWC)** and **Apex**. This project is designed to test users' knowledge of Salesforce development concepts (specifically LWC) through a modern, responsive user interface.
 
-## How Do You Plan to Deploy Your Changes?
+## 📸 Screenshots
 
-Do you want to deploy a set of changes, or create a self-contained application? Choose a [development model](https://developer.salesforce.com/tools/vscode/en/user-guide/development-models).
+| **Quiz Interface** | **App Launcher Integration** |
+|:---:|:---:|
+| ![Quiz App UI](https://github.com/gayanandpatel/Salesforce-Project-LWC-Apex-/raw/main/Quiz%20App/quizapp.gif) | ![App Launcher](https://github.com/gayanandpatel/Salesforce-Project-LWC-Apex-/raw/main/Quiz%20App/quiz_homepage.gif) |
+| *Interactive quiz with radio button selection, submit, and reset functionality.* | *Accessible directly from the Salesforce App Launcher under "My Projects".* |
 
-## Configure Your Salesforce DX Project
+## ✨ Features
 
-The `sfdx-project.json` file contains useful configuration information for your project. See [Salesforce DX Project Configuration](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ws_config.htm) in the _Salesforce DX Developer Guide_ for details about this file.
+-   **Dynamic Question Rendering:** Automatically renders questions and multiple-choice options (radio buttons) from a data set.
+-   **Selection Handling:** Captures user input in real-time, ensuring only one option can be selected per question.
+-   **Score Calculation:** The "Submit" feature evaluates user answers against the correct key and displays the final score.
+-   **State Management:**
+    -   **Reset Functionality:** Clears all user selections and resets the quiz state to its initial default without reloading the page.
+    -   **Validation:** Prevents submission until valid selections are made (if configured) or highlights correct/incorrect answers.
+-   **Responsive Design:** Styled with **Salesforce Lightning Design System (SLDS)** for a native look and feel.
+-   **App Page Integration:** Fully compatible with Lightning App Builder; deployed as a custom tab within the "My Projects" app.
 
-## Read All About It
+## 🛠️ Tech Stack
 
-- [Salesforce Extensions Documentation](https://developer.salesforce.com/tools/vscode/)
-- [Salesforce CLI Setup Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_intro.htm)
-- [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm)
-- [Salesforce CLI Command Reference](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference.htm)
+-   **Frontend:** Lightning Web Components (LWC), HTML, CSS, JavaScript (ES6+).
+-   **Backend:** Apex (Controllers for data fetching/logic), SOQL.
+-   **Styling:** Salesforce Lightning Design System (SLDS).
+-   **Tools:** VS Code, Salesforce CLI (SFDX), Git.
+
+## 🚀 Installation & Usage
+
+### Prerequisites
+-   Salesforce DX project set up.
+-   VS Code with Salesforce Extension Pack.
+-   Authorized Dev Hub or Scratch Org.
+
+### Deployment Steps
+
+1.  **Clone the Repository:**
+    ```bash
+    git clone [https://github.com/gayanandpatel/Salesforce-Project-LWC-Apex-.git](https://github.com/gayanandpatel/Salesforce-Project-LWC-Apex-.git)
+    cd Salesforce-Project-LWC-Apex-
+    ```
+
+2.  **Authorize your Org:**
+    ```bash
+    sfdx auth:web:login -d -a myDevOrg
+    ```
+
+3.  **Deploy Source to Org:**
+    Right-click on the `Quiz App` folder (or `force-app`) in VS Code and select **SFDX: Deploy Source to Org**.
+    *Or run via CLI:*
+    ```bash
+    sfdx force:source:deploy -p "Quiz App" -u myDevOrg
+    ```
+
+4.  **Assign Permissions:**
+    Ensure your user has the necessary permissions to access the Apex classes and the Custom Tab.
+
+5.  **Add to Page:**
+    -   Go to **Setup > Lightning App Builder**.
+    -   Edit an existing App Page or create a new one.
+    -   Drag and drop the `QuizApp` custom component onto the canvas.
+    -   Save and Activate.
+
+6.  **Access the App:**
+    Open the **App Launcher** (9 dots), search for **"QuizApp"** or **"My Projects"**, and launch the application.
+
+## 📂 Project Structure
+
+```text
+Quiz App/
+├── classes/               # Apex Controllers (backend logic)
+├── lwc/
+│   ├── quizApp/           # Main LWC Component
+│   │   ├── quizApp.html   # Template (Questions UI)
+│   │   ├── quizApp.js     # Controller (Handlers for Submit/Reset)
+│   │   ├── quizApp.css    # Custom Styling
+│   │   └── quizApp.js-meta.xml # Configuration for App Builder
+└── tabs/                  # Custom Tab definition
+```
+---
+
+## 👤 Author
+**Gayanand Patel**
