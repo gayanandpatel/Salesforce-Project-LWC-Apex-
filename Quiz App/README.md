@@ -7,7 +7,7 @@ A dynamic and interactive Quiz Application built on the Salesforce Platform usin
 | **App Launcher Integration** | **Quiz Interface** |
 |:---:|:---:|
 | ![App Launcher](screenshots/quiz_homepage.gif) | ![Quiz App UI](screenshots/quizapp.gif) |
-| *Interactive quiz with radio button selection, submit, and reset functionality.* | *Accessible directly from the Salesforce App Launcher under "My Projects".* |
+| *Accessible directly from the Salesforce App Launcher under "My Projects".* | *Interactive quiz with radio button selection, submit, and reset functionality.* |
 
 ## ✨ Features
 
