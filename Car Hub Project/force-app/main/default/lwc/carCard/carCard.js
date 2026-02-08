@@ -6,7 +6,7 @@ import {NavigationMixin} from 'lightning/navigation'
 //Car__c Schema
 import CAR_OBJECT from '@salesforce/schema/Car__c'
 import NAME_FIELD from '@salesforce/schema/Car__c.Name'
-import PICTURE_URL_FIELD from '@salesforce/schema/Car__c.Picture__c'
+import PICTURE_URL_FIELD from '@salesforce/schema/Car__c.Picture_URL__c'
 import CATEGORY_FIELD from '@salesforce/schema/Car__c.Category__c'
 import MAKE_FIELD from '@salesforce/schema/Car__c.Make__c'
 import MSRP_FIELD from '@salesforce/schema/Car__c.MSRP__c'
