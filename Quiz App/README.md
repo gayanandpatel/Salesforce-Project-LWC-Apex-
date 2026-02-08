@@ -4,9 +4,9 @@ A dynamic and interactive Quiz Application built on the Salesforce Platform usin
 
 ## 📸 Screenshots
 
-| **Quiz Interface** | **App Launcher Integration** |
+| **App Launcher Integration** | **Quiz Interface** |
 |:---:|:---:|
-| ![Quiz App UI](https://github.com/gayanandpatel/Salesforce-Project-LWC-Apex-/raw/main/Quiz%20App/quizapp.gif) | ![App Launcher](https://github.com/gayanandpatel/Salesforce-Project-LWC-Apex-/raw/main/Quiz%20App/quiz_homepage.gif) |
+| ![App Launcher](screenshots/quiz_homepage.gif) | ![Quiz App UI](screenshots/quizapp.gif) |
 | *Interactive quiz with radio button selection, submit, and reset functionality.* | *Accessible directly from the Salesforce App Launcher under "My Projects".* |
 
 ## ✨ Features
